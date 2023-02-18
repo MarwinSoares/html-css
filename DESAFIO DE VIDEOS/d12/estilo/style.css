@@ -1,12 +1,21 @@
 @charset "UTF8";
 
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+}
+:root{
+    --fonte01:verdana, 'geneva', tahoma, sans-serif;
+    --fonte02:'Passion One', 'cursive';
+    --fonte03:'Sriracha', 'cursive';
 }
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte01);
 }
 header{
     background-color: black;
@@ -16,6 +25,8 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte02);
+    font-size: 10vw;
 }
 header > p{
     padding-bottom: 50px;
@@ -35,6 +46,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -51,8 +64,11 @@ section.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
 }
+
+
+
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
     background-color: rgb(61, 61, 61);
     padding-left: 10px;
 }
